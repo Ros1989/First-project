@@ -6,10 +6,13 @@
         <div class="student__photo-wrapper student__photo-wrapper--margin">
           <img
             srcset="
-              ./images/mobile/antonina-kucherovska.png     80w,
-              ./images/mobile/antonina-kucherovska@2x.png 160w
+              ./images/mobile/antonina-kucherovska.png          80w,
+              ./images/mobile/antonina-kucherovska@2x.png      160w,
+              ./images/desktop1280/antonina-kucherovska-1280.png    145w,
+              ./images/desktop1280/antonina-kucherovska-1280@2x.png 290w
             "
-            sizes="80px"
+            sizes="(max-width: 1279px) 80px,
+            (min-width: 1280px) 145px"
             height="160"
             alt="Antonina Kecherovska"
             src="./images/mobile/antonina-kucherovska.png"
@@ -18,6 +21,7 @@
         </div>
         <a
           href="https://vk.com/"
+          target="_blank"
           class="student__social-link--vk student__social-link--margin"
         ></a>
       </div>
@@ -26,7 +30,8 @@
         <h4 class="student__personal--name">Тоня Кучеровская</h4>
         <p class="student__personal--about">
           Выпуск 2015 года, Національний університет біоресурсів
-          <span class="student__perbr"></span> і природокористування України
+          <span class="student__personal--br"></span> і природокористування
+          України
         </p>
         <p class="student__personal--comment">
           За короткий час занять з Оленою я опанувала граматику і поповнила
