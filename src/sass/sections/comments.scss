@@ -18,12 +18,24 @@
     padding: 24px 28px 34px;
     background-color: $primary-text-color;
     box-shadow: 4px 7px 35px 11px rgba(29, 29, 29, 0.09);
-  
+
+    
+    @media (min-width: 768px) {
+      padding: 42px 64px 48px 0;
+    }
+    
+    &__contaniner--photo {
+      @media (min-width: 768px) {
+        width: 160px;
+      }
+    }
+    
     &__photo-wrapper {
       width: 80px;
       margin: 0 auto;
       border-radius: 50%;
     }
+
     &__photo-wrapper--margin {
       margin-bottom: 22px;
     }
@@ -35,13 +47,26 @@
       width: 26px;
       height: 14px;
       margin: 0 auto;
+      display: block;
+
+      @media (min-width: 768px) {
+        width: 36px;
+        height: 18px;
+      }
     }
   
     &__social-link--margin {
       margin-bottom: 22px;
+
+      @media (min-width: 768px) {
+        margin: 0px auto;
+      }
     }
   
     &__personal {
+      @media (min-width: 768px) {
+        width: 464px;
+      }
       &--name {
         font-size: 13px;
         font-weight: $secondary-font-weight;
@@ -89,14 +114,7 @@
       margin-bottom: 22px;
     }
   }
-  
-  // STUDENT TITLE ABOUT COMMMENT
-  
-  .student__contaniner--photo {
-      @media (min-width: 768px) {
-          width: 520px;
-      }
-  }
+
   
   // OVERLAY!!!
   
@@ -132,11 +150,18 @@
     justify-content: space-between;
     width: 100%;
     position: absolute;
-    top: 50%;
+    bottom: 5%;
     left: 0;
     z-index: 10;
-    transform: translateY(-50%);
-  
+    transform: translateY(-5%);
+
+    @media (min-width: 768px) {
+      bottom: 50%;
+      left: 0;
+      transform: translate(-3%,-50%);
+      width: 106%;
+    }
+    
     &__prev,
     &__next {
       width: 22px;
@@ -145,4 +170,10 @@
       cursor: pointer;
     }
   }
+
+.arrows-position {
+  position: relative;
+}
+
+  
   
