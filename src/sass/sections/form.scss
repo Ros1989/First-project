@@ -1,0 +1,48 @@
+.registration-form {
+    background-image: url(../../images/mobile/registration_bg.png);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;;
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(17, 21, 23, 0.8);
+    }
+
+    &__title {
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: $secondary-font-weight;
+    }
+
+    &__descriprion {
+        font-size: 11px;
+        line-height: 20px;
+        font-weight: $fifth-font-weight;
+    }
+
+    &__title--color, &__description--color {
+        color: $second-color;
+    }
+
+}
+
+
+
+.form-contact {
+    background: rgba (255,255,255, 0.9);
+
+    &__input {
+    font-family: $main-font;
+    font-weight: $secondary-font-weight;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    width: 278px;
+    height: 48px;
+    background: transparent;
+    }
+}
+
+ 
