@@ -153,6 +153,12 @@
       }
     }
 
+    &--br {
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+
     &--comment {
       font-size: 11px;
       font-weight: $fourth-font-weight;
@@ -243,10 +249,10 @@
   justify-content: space-between;
   width: 100%;
   position: absolute;
-  bottom: 4%;
+  bottom: 28px;
   left: 0;
   z-index: 10;
-  transform: translateY(-4%);
+  transform: translateY(8px);
 
   @media (min-width: 768px) {
     bottom: 50%;
@@ -261,16 +267,13 @@
     height: 12px;
     fill: $second-color;
     cursor: pointer;
+    @media (min-width: 768px) {
+      width: 36px;
+      height: 18px;    
+    }
   }
 }
 
 .arrows-position {
   position: relative;
-}
-
-
-.student__container--photo {
-  @media (min-width: 768px) {
-    width: 160px;
-  }
 }
