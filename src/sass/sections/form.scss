@@ -1,7 +1,7 @@
 .section-form {
     position: relative;
     background-image: url(../../images/mobile/registration_bg.png);
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
 
     &::before {
@@ -158,7 +158,7 @@
 
 @media (min-width: 1280px) {
     .section-form {
-        background-image: url(../../images/desktop1280/registration_bg_desktop_1024.png);
+        background-image: url(../../images/desktop1280/registration_bg_desktop_1280.png);
     }
 
     .registration-form {
@@ -194,6 +194,39 @@
             font-size: 20px;
         }
 
+    }
+
+    .form-contact__input:nth-child(2) {
+        margin-bottom: 57px;
+    }
+}
+
+@media (min-width: 1680px) {
+    .section-form {
+        background-image: url(../../images/desktop1680/registration_bg_desktop_1680.png);
+    }
+
+    .registration-form {
+
+        &__description {
+            font-size: 25px;
+            line-height: 38px;
+            letter-spacing: 1.25px;
+
+            &--indent {
+                padding-top: 66px;
+                padding-bottom: 52px;
+            }
+        }
+
+        &--indent {
+            padding-top: 128px;
+            padding-bottom: 100px;
+        }
+    }
+
+    &::placeholder {
+        font-size: 20px;
     }
 
     .form-contact__input:nth-child(2) {
