@@ -2,7 +2,7 @@
     position: relative;
     background-image: url(../../images/mobile/registration_bg.png);
     background-position: center;
-    // background-size: cover;
+    background-repeat: no-repeat;
 
     &::before {
         position: absolute;
@@ -19,15 +19,17 @@
     text-align: center;
     z-index: 3;
     color: $primary-text-color;
-
     
     &__title {
         font-size: 14px;
         line-height: 26px;
         font-weight: $secondary-font-weight;
-
+        letter-spacing: 0.7px;
+        
         &--br {
-            display: block;
+            @media (max-width: 767px) {
+                display: block;
+            }
         }
     }
 
@@ -35,9 +37,12 @@
         font-size: 11px;
         line-height: 20px;
         font-weight: $fifth-font-weight;
+        letter-spacing: 0.55px;
 
         &--br {
-            display: block;
+            @media (max-width: 767px) {
+                display: block;
+            }
         }
 
         &--indent {
@@ -56,28 +61,94 @@
     }
 }
 
-
-
 .form-contact {
     background: rgba (255,255,255, 0.9);
 
     &__input {
-    font-family: $main-font;
-    font-weight: $secondary-font-weight;
-    color: rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
-    width: 278px;
-    height: 48px;
-    background: transparent;
+        color: $primary-text-color;
+        letter-spacing: 0.65px;
+        padding-left: 22px;
+        border: 1px solid rgb(255, 255, 255);
+        width: 280px;
+        height: 50px;
+        background: transparent;
 
-    &:nth-child(1) {
-        margin-bottom: 20px;
-    }
+        &:focus {
+            outline: none;
+        }
 
-    &:nth-child(2) {
-        margin-bottom: 55px;
-    }
+        &:invalid:not(:placeholder-shown) {
+            border-color: red;
+            
+        }
+
+        &:valid {
+            border-color: green;
+        }
+
+        &:nth-child(1) {
+            margin-bottom: 20px;
+        }
+
+        &:nth-child(2) {
+            margin-bottom: 55px;
+        }
+
+        &::placeholder {
+            font-family: $main-font;
+            font-weight: $secondary-font-weight;
+            color: $primary-text-color;
+            // padding-left: 22px;
+            font-size: 13px;
+        }
     }
 }
 
- 
+@media (min-width: 768px) {
+    .section-form {
+        background-image: url(../../images/tablet/registration_bg_tablet.png);
+    }
+
+    .registration-form__title--tablet-br {
+        display: block;
+    }
+
+    .registration-form__description--tablet-br {
+        display: block;
+    }
+
+    .form-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .registration-form {
+
+        &__title {
+            font-size: 22px;
+            line-height: 38px;
+            letter-spacing: 1.1px;
+        }
+
+        &__description {
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: 0.75px;
+
+            &--indent {
+                padding-top: 30px;
+                padding-bottom: 42px;
+            }
+        }
+
+        &--indent {
+            padding-top: 60px;
+            padding-bottom: 64px;
+        }
+    }
+
+    .form-contact__input:nth-child(2) {
+        margin-bottom: 30px;
+    }
+}
