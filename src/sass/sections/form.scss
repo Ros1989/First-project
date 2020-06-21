@@ -1,32 +1,59 @@
-.registration-form {
+.section-form {
+    position: relative;
     background-image: url(../../images/mobile/registration_bg.png);
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;;
+    background-position: center;
+    // background-size: cover;
 
     &::before {
+        position: absolute;
         content: '';
         width: 100%;
         height: 100%;
         background-color: rgba(17, 21, 23, 0.8);
+        z-index: 2;
     }
+}
 
+.registration-form {
+    position: relative;
+    text-align: center;
+    z-index: 3;
+    color: $primary-text-color;
+
+    
     &__title {
         font-size: 14px;
         line-height: 26px;
         font-weight: $secondary-font-weight;
+
+        &--br {
+            display: block;
+        }
     }
 
-    &__descriprion {
+    &__description {
         font-size: 11px;
         line-height: 20px;
         font-weight: $fifth-font-weight;
+
+        &--br {
+            display: block;
+        }
+
+        &--indent {
+            padding-top: 20px;
+            padding-bottom: 26px;
+        }
     }
 
     &__title--color, &__description--color {
         color: $second-color;
     }
 
+    &--indent {
+        padding-top: 52px;
+        padding-bottom: 58px;
+    }
 }
 
 
@@ -42,6 +69,14 @@
     width: 278px;
     height: 48px;
     background: transparent;
+
+    &:nth-child(1) {
+        margin-bottom: 20px;
+    }
+
+    &:nth-child(2) {
+        margin-bottom: 55px;
+    }
     }
 }
 
