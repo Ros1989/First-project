@@ -98,7 +98,6 @@
             font-family: $main-font;
             font-weight: $secondary-font-weight;
             color: $primary-text-color;
-            // padding-left: 22px;
             font-size: 13px;
         }
     }
@@ -148,7 +147,56 @@
         }
     }
 
+    .form-contact__input {
+        width: 400px;
+    }
+
     .form-contact__input:nth-child(2) {
         margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .section-form {
+        background-image: url(../../images/desktop1280/registration_bg_desktop_1024.png);
+    }
+
+    .registration-form {
+
+        &__title {
+            font-size: 38px;
+            line-height: 50px;
+            letter-spacing: 1.9px;
+        }
+
+        &__description {
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 0.9px;
+
+            &--indent {
+                padding-top: 50px;
+                padding-bottom: 53px;
+            }
+        }
+
+        &--indent {
+            padding-top: 86px;
+            padding-bottom: 88px;
+        }
+    }
+
+    .form-contact__input {
+        width: 620px;
+        height: 72px;
+
+        &::placeholder {
+            font-size: 20px;
+        }
+
+    }
+
+    .form-contact__input:nth-child(2) {
+        margin-bottom: 57px;
     }
 }
