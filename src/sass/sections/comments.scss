@@ -67,10 +67,12 @@
 
   &__container--photo {
     margin: 0;
+
     @media (min-width: 768px) {
       width: 160px;
       padding-top: 24px;
     }
+
     @media (min-width: 1280px) {
       padding-top: 0px;
     }
@@ -80,6 +82,8 @@
     // width: 80px;
     margin: 0 auto;
     border-radius: 50%;
+
+
     @media (min-width: 1280px) {
       min-width: 145px;
     }
@@ -91,6 +95,7 @@
 
   &__photo {
     margin: 0 auto;
+    border-radius: 50%;
   }
 
   &__social-link--vk {
@@ -195,7 +200,9 @@
       display: inline-block;
       color: $second-color;
     }
+
     @media (min-width: 768px) {
+
       &--name,
       &--about,
       &--comment {
@@ -211,6 +218,7 @@
   @media (max-width: 767px) {
     margin-bottom: 17px;
   }
+
   @media (min-width: 768px) {
     display: flex;
     // width: 680px;
@@ -232,6 +240,7 @@
 
   &__photo-wrapper {
     width: 54px;
+
     @media (min-width: 768px) {
       &:not(:last-of-type) {
         margin-right: 22px;
@@ -248,6 +257,7 @@
   @media (max-width: 767px) {
     &__photo-wrapper {
       width: 54px;
+
       &:not(:last-of-type) {
         margin-right: 10px;
       }
@@ -289,6 +299,7 @@
     height: 12px;
     fill: $second-color;
     cursor: pointer;
+
     @media (min-width: 768px) {
       width: 36px;
       height: 18px;
@@ -358,4 +369,3 @@
 // .slick-next {
 //   background-image: url('../images/slider_btn/arrow-next.svg');
 // }
-
