@@ -2,6 +2,10 @@
   padding: 50px 0 54px;
   background-color: rgb(252, 252, 252);
 
+  &-slider {
+    position: relative;
+  }
+
   @media (min-width: 768px) {
     padding: 52px 0 76px;
   }
@@ -48,11 +52,12 @@
   min-width: 280px;
   padding: 24px 28px 34px;
   background-color: $primary-text-color;
-  box-shadow: 4px 7px 35px 11px rgba(29, 29, 29, 0.09);
+
+  // display: flex !important; імпортант це НЕ ПРАВИЛЬНО!!!
 
   @media (min-width: 768px) {
     width: 688px;
-    padding: 42px 64px 48px 36px;
+    padding: 42px 44px 48px 36px;
   }
 
   @media (min-width: 1280px) {
@@ -82,7 +87,6 @@
     // width: 80px;
     margin: 0 auto;
     border-radius: 50%;
-
 
     @media (min-width: 1280px) {
       min-width: 145px;
@@ -232,140 +236,193 @@
 
 // OVERLAY!!!
 
-.overlay {
-  display: flex;
-  justify-content: center;
-  flex-basis: 280px;
-  position: relative;
-
-  &__photo-wrapper {
-    width: 54px;
-
-    @media (min-width: 768px) {
-      &:not(:last-of-type) {
-        margin-right: 22px;
-      }
-    }
-
-    @media (min-width: 1280px) {
-      &:not(:last-of-type) {
-        margin-right: 38px;
-      }
-    }
-  }
-
-  @media (max-width: 767px) {
-    &__photo-wrapper {
-      width: 54px;
-
-      &:not(:last-of-type) {
-        margin-right: 10px;
-      }
-    }
-
-    &__fourth-student,
-    &__fifth-student,
-    &__sixth-student,
-    &__seventh-student {
-      display: none;
-    }
-  }
-}
-
-.arrows {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  position: absolute;
-  bottom: 28px;
-  left: 0;
-  z-index: 10;
-  transform: translateY(8px);
-
-  @media (min-width: 768px) {
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    width: 726px;
-  }
-
-  @media (min-width: 1280px) {
-    width: 1175px;
-  }
-
-  &__prev,
-  &__next {
-    width: 22px;
-    height: 12px;
-    fill: $second-color;
-    cursor: pointer;
-
-    @media (min-width: 768px) {
-      width: 36px;
-      height: 18px;
-    }
-  }
-}
-
-.arrows-position {
-  position: relative;
-}
-
-// SLICK  !!!
-
-// .slick-dots {
+// .overlay {
 //   display: flex;
-//   list-style: none;
 //   justify-content: center;
-// }
+//   flex-basis: 280px;
+//   position: relative;
 
-// .slick-dots li button {
-//   border: none;
-//   outline: none;
-//   border-radius: 50%;
-//   font-size: 0;
-//   width: 54px;
-//   height: 54px;
-//   &:hover, &:focus {
-//     border: 1px solid $second-color;
+//   &__photo-wrapper {
+//     width: 54px;
+
+//     @media (min-width: 768px) {
+//       &:not(:last-of-type) {
+//         margin-right: 22px;
+//       }
+//     }
+
+//     @media (min-width: 1280px) {
+//       &:not(:last-of-type) {
+//         margin-right: 38px;
+//       }
+//     }
+//   }
+
+//   @media (max-width: 767px) {
+//     &__photo-wrapper {
+//       width: 54px;
+
+//       &:not(:last-of-type) {
+//         margin-right: 10px;
+//       }
+//     }
+
+//     &__fourth-student,
+//     &__fifth-student,
+//     &__sixth-student,
+//     &__seventh-student {
+//       display: none;
+//     }
 //   }
 // }
 
-// #slick-slide-control00 {
-//   background-image: url('../images/tablet/photo4.png');
+// .arrows {
+//   display: flex;
+//   justify-content: space-between;
+//   width: 100%;
+//   position: absolute;
+//   bottom: 28px;
+//   left: 0;
+//   z-index: 10;
+//   transform: translateY(8px);
+
+//   @media (min-width: 768px) {
+//     bottom: 50%;
+//     left: 50%;
+//     transform: translate(-50%, 50%);
+//     width: 726px;
+//   }
+
+//   @media (min-width: 1280px) {
+//     width: 1175px;
+//   }
+
+//   &__prev,
+//   &__next {
+//     width: 22px;
+//     height: 12px;
+//     fill: $second-color;
+//     cursor: pointer;
+
+//     @media (min-width: 768px) {
+//       width: 36px;
+//       height: 18px;
+//     }
+//   }
 // }
 
-// #slick-slide-control01 {
-//   background-image: url('../images/tablet/photo5.png');
-// }
-
-// #slick-slide-control02 {
-//   background-image: url('../images/tablet/photo6.png');
-// }
-
-// #slick-slide-control03 {
-//   background-image: url('../images/tablet/photo9.png');
-// }
-
-// .slick-list {
+// .arrows-position {
 //   position: relative;
 // }
 
-// .slick-prev,
-// .slick-next {
-//   border: none;
-//   background-color: transparent;
-//   width: 32px;
-//   height: 32px;
-//   // fill: $second-color;
-//   cursor: pointer;
-//   font-size: 0;
-//   cursor: pointer;
-// }
+// SLICK  !!!
 
-// .slick-prev {
-//   background-image: url('../images/slider_btn/arrow-prev.svg');
+.slick-dots {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+}
 
-// .slick-next {
-//   background-image: url('../images/slider_btn/arrow-next.svg');
-// }
+.slick-dots li button {
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  font-size: 0;
+  width: 54px;
+  height: 54px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $second-color;
+  }
+}
+
+.slick-list {
+  position: relative;
+}
+
+.slick-dots li {
+  &:not(:last-of-type) {
+    margin-right: 10px;
+  }
+
+  @media (min-width: 768px) {
+    margin-right: 22px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-right: 38px;
+  }
+}
+
+#slick-slide-control00 {
+  background-image: url('../images/desktop1280/photo4.png');
+}
+
+#slick-slide-control01 {
+  background-image: url('../images/desktop1280/photo5.png');
+}
+
+#slick-slide-control02 {
+  background-image: url('../images/desktop1280/photo6.png');
+}
+
+#slick-slide-control03 {
+  background-image: url('../images/desktop1280/photo7.png');
+}
+
+#slick-slide-control04 {
+  background-image: url('../images/desktop1280/photo8.png');
+}
+
+#slick-slide-control05 {
+  background-image: url('../images/desktop1280/photo9.png');
+}
+
+#slick-slide-control06 {
+  background-image: url('../images/desktop1280/photo10.png');
+}
+
+.slick-prev,
+.slick-next {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  // fill: $second-color;
+  cursor: pointer;
+  font-size: 0px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 5;
+}
+
+.slick-prev {
+  background-image: url('../images/slider_btn/arrow-prev.svg');
+
+  @media (max-width: 1279px) {
+    top: 40%;
+    left: -10px;
+  }
+
+  @media (min-width: 1280px) {
+    top: 40%;
+    left: -40px;
+  }
+}
+
+.slick-next {
+  background-image: url('../images/slider_btn/arrow-next.svg');
+
+  @media (max-width: 1279px) {
+    top: 40%;
+    right: -10px;
+  }
+
+  @media (min-width: 1280px) {
+    top: 40%;
+    right: -40px;
+  }
+}
