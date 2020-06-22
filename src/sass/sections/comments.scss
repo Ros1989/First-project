@@ -66,10 +66,10 @@
   }
 
   &__container--photo {
+    margin: 0;
     @media (min-width: 768px) {
       width: 160px;
       padding-top: 24px;
-      
     }
     @media (min-width: 1280px) {
       padding-top: 0px;
@@ -117,7 +117,6 @@
   }
 
   &__personal {
- 
     &--name {
       font-size: 13px;
       font-weight: $secondary-font-weight;
@@ -175,7 +174,7 @@
       color: $first-color;
       line-height: 20px;
       letter-spacing: 0.55px;
-      text-align: center;      
+      text-align: center;
 
       @media (min-width: 1280px) {
         font-size: 17px;
@@ -292,7 +291,7 @@
     cursor: pointer;
     @media (min-width: 768px) {
       width: 36px;
-      height: 18px;    
+      height: 18px;
     }
   }
 }
@@ -300,3 +299,63 @@
 .arrows-position {
   position: relative;
 }
+
+// SLICK  !!!
+
+// .slick-dots {
+//   display: flex;
+//   list-style: none;
+//   justify-content: center;
+// }
+
+// .slick-dots li button {
+//   border: none;
+//   outline: none;
+//   border-radius: 50%;
+//   font-size: 0;
+//   width: 54px;
+//   height: 54px;
+//   &:hover, &:focus {
+//     border: 1px solid $second-color;
+//   }
+// }
+
+// #slick-slide-control00 {
+//   background-image: url('../images/tablet/photo4.png');
+// }
+
+// #slick-slide-control01 {
+//   background-image: url('../images/tablet/photo5.png');
+// }
+
+// #slick-slide-control02 {
+//   background-image: url('../images/tablet/photo6.png');
+// }
+
+// #slick-slide-control03 {
+//   background-image: url('../images/tablet/photo9.png');
+// }
+
+// .slick-list {
+//   position: relative;
+// }
+
+// .slick-prev,
+// .slick-next {
+//   border: none;
+//   background-color: transparent;
+//   width: 32px;
+//   height: 32px;
+//   // fill: $second-color;
+//   cursor: pointer;
+//   font-size: 0;
+//   cursor: pointer;
+// }
+
+// .slick-prev {
+//   background-image: url('../images/slider_btn/arrow-prev.svg');
+
+// .slick-next {
+//   background-image: url('../images/slider_btn/arrow-next.svg');
+// }
+
