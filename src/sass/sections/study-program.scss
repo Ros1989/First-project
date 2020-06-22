@@ -1,4 +1,18 @@
-@media (max-width: 767px) {
+  .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  background-color: $background-color;
+  position: relative;
+  background-image: url(../images/mobile/study.png);
+  background-repeat: no-repeat;
+  background-position: right bottom 195px;
+  padding-bottom: 305px;
+  }
+
   .study-program {
   display: flex;
   flex-wrap: wrap;
@@ -7,21 +21,6 @@
   height: auto;
   flex-direction: column;
   margin: 0 auto;
-  }
-
-  .wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: inherit;
-  height: auto;
-  flex-direction: column;
-  background-color: $background-color;
-  position: relative;
-  background-image: url(../images/mobile/study.png);
-  background-repeat: no-repeat;
-  background-position: 165px 86.7%;
-  padding-bottom: 305px;
   }
   
   .program__title {
@@ -177,24 +176,23 @@
     background-repeat: no-repeat;
     }
   }
-}
 
 
 @media (min-width: 768px) {
-  .study-program {
-  width: 100%;
-  height: auto;
-  flex-direction: row;
-  margin: 0 auto;
-  }
-  
   .wrapper {
   flex-direction: row;
   background-color: $background-color;
   background-image: url(../images/tablet/study.png);
   background-repeat: no-repeat;
-  background-position: 100% 83%;
-  padding-bottom: 252px;
+  background-position: right bottom 211px;
+  padding-bottom: 262px;
+  }
+
+    .study-program {
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  margin: 0 auto;
   }
   
   .program__title {
@@ -204,6 +202,7 @@
     line-height: 62.54px;
     letter-spacing: 1px;
     color: $primary-text-color;
+    text-align: left;
     margin-bottom: 33px;
     padding-top: 42.5px;
   }
@@ -256,6 +255,9 @@
   
   .program__period-moduls-list {
     display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
   }
   
   .program__period-moduls-element {
@@ -314,8 +316,8 @@
   @media (min-width: 1280px) {
   .wrapper {
     background-image: url(../images/desktop1280/study.png);
-    background-position: 0 65%;
-    padding-bottom: 515px;
+    background-position: left bottom 235px;
+    padding-bottom: 397px;
   }
 
   .wrapper::before {
@@ -346,6 +348,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
     padding-left: 0;
   }
   
@@ -379,11 +382,6 @@
     position: absolute;
     left: 0px;
     top: -58px;
-  }
-  
-  .program__period-moduls-list {
-    display: flex;
-    flex-direction: column;
   }
   
   .program__period-moduls-element {
