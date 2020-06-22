@@ -4,6 +4,7 @@
     background-color: $background-color;
     position: relative;
   }
+
   .description {
     position: absolute;
     top: 0;
@@ -12,6 +13,7 @@
     margin: 0 auto;
     z-index: 1;
   }
+
   .description__slogan {
     font-family: $main-font;
     font-size: 20px;
@@ -20,9 +22,11 @@
     padding-top: 56px;
     padding-bottom: 22px;
   }
+
   .slogan-wrap {
     color: $second-color;
   }
+
   .description__list {
     padding-left: 30px;
     padding-top: 51px;
@@ -40,9 +44,11 @@
       width: 226px;
     }
   }
+
   .description__list-item:not(:last-child) {
     margin-bottom: 51px;
   }
+
   .description__list-item::before {
     display: block;
     content: '';
@@ -52,6 +58,7 @@
     position: absolute;
     top: -21px;
   }
+
   .specification {
     margin-top: 52px;
     margin-top: 210px;
@@ -64,6 +71,7 @@
     text-align: center;
     padding-bottom: 40px;
   }
+
   .specification__list {
     display: flex;
     flex-wrap: wrap;
@@ -111,9 +119,11 @@
     padding-bottom: 29px;
     position: relative;
   }
+
   .specification__list-item:not(:last-child) {
     margin-bottom: 16px;
   }
+
   .specification__list-icon-svg {
     width: 50px;
     height: 50px;
@@ -138,24 +148,30 @@
     transition: all 0.2s linear;
     z-index: -1;
   }
+
   .specification__list-item:hover .overlay-main-problem {
     visibility: visible;
     opacity: 1;
     transition-duration: 0.2s;
   }
+
   .specification__list-item:hover .specification__list-subtitle {
     color: #fff;
   }
+
   .specification__list-item:hover .specification__list-text {
     color: #fff;
   }
+
   .specification__list-item:hover .specification__list-icon-svg {
     fill: #fff;
   }
+
   .specification__list-item:hover .specification__list-text::after {
     background-color: white;
   }
 }
+
 // .specification__list-icon-study {
 //   width: 42px;
 //   height: 45px;
