@@ -1,0 +1,179 @@
+@media (max-width: 767px) {
+  .main-problem__header {
+    height: 516px;
+    background-color: $background-color;
+    position: relative;
+  }
+  .description {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 280px;
+    margin: 0 auto;
+    z-index: 1;
+  }
+  .description__slogan {
+    font-family: $main-font;
+    font-size: 20px;
+    font-weight: $secondary-font-weight;
+    color: $primary-text-color;
+    padding-top: 56px;
+    padding-bottom: 22px;
+  }
+  .slogan-wrap {
+    color: $second-color;
+  }
+  .description__list {
+    padding-left: 30px;
+    padding-top: 51px;
+    padding-bottom: 34px;
+    box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.13);
+    background-color: $primary-text-color;
+    list-style: none;
+
+    &-item {
+      font-family: $main-font;
+      font-weight: $main-font-weight;
+      font-size: 13px;
+      color: $first-color;
+      position: relative;
+      width: 226px;
+    }
+  }
+  .description__list-item:not(:last-child) {
+    margin-bottom: 51px;
+  }
+  .description__list-item::before {
+    display: block;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: $second-color;
+    position: absolute;
+    top: -21px;
+  }
+  .specification {
+    margin-top: 52px;
+    margin-top: 210px;
+  }
+
+  .specification__slogan {
+    font-family: $main-font;
+    font-weight: $secondary-font-weight;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .specification__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 53px;
+
+    &-subtitle {
+      font-family: $main-font;
+      font-weight: $main-font-weight;
+      font-size: 13px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 1px;
+      color: $first-color;
+    }
+
+    &-text {
+      font-size: 11px;
+      line-height: 20px;
+      color: $third-text-color;
+      font-family: $main-font;
+      font-weight: $third-font-weight;
+      text-align: center;
+      padding-top: 45px;
+      letter-spacing: 1px;
+      position: relative;
+
+      &::after {
+        display: block;
+        content: '';
+        width: 25px;
+        height: 2px;
+        background-color: $second-color;
+        position: absolute;
+        left: 126px;
+        top: 22px;
+      }
+    }
+  }
+
+  .specification__list-item {
+    box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.13);
+    list-style: none;
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 29px;
+    position: relative;
+  }
+  .specification__list-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .specification__list-icon-svg {
+    width: 50px;
+    height: 50px;
+    fill: $second-color;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -100%);
+  }
+
+  .overlay-main-problem {
+    width: 280px;
+    height: 100%;
+    background-color: $second-color;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s linear;
+    z-index: -1;
+  }
+  .specification__list-item:hover .overlay-main-problem {
+    visibility: visible;
+    opacity: 1;
+    transition-duration: 0.2s;
+  }
+  .specification__list-item:hover .specification__list-subtitle {
+    color: #fff;
+  }
+  .specification__list-item:hover .specification__list-text {
+    color: #fff;
+  }
+  .specification__list-item:hover .specification__list-icon-svg {
+    fill: #fff;
+  }
+  .specification__list-item:hover .specification__list-text::after {
+    background-color: white;
+  }
+}
+// .specification__list-icon-study {
+//   width: 42px;
+//   height: 45px;
+// }
+// .specification__list-icon-mobile,
+// .specification__list-icon-open-communication {
+//   width: 44px;
+//   height: 45px;
+// }
+// .specification__list-icon-open-book {
+//   width: 50px;
+//   height: 36px;
+// }
+// .specification__list-icon-student {
+//   width: 39px;
+//   height: 45px;
+// }
+// .specification__list-icon-audio {
+//   width: 50px;
+//   height: 43px;
+// }
