@@ -105,10 +105,11 @@
       font-family: $main-font;
       font-weight: $third-font-weight;
       text-align: center;
-      padding-top: 45px;
+      padding-top: 40px;
       letter-spacing: 1px;
       position: relative;
       margin: 0 26px 0 26px;
+      width: 246px;
 
       &::after {
         display: block;
@@ -117,7 +118,7 @@
         height: 2px;
         background-color: $second-color;
         position: absolute;
-        left: 100px;
+        left: 106px;
         top: 22px;
       }
     }
@@ -127,7 +128,7 @@
     box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.13);
     list-style: none;
     position: relative;
-    padding-top: 90px;
+    padding-top: 78px;
     padding-bottom: 29px;
     position: relative;
   }
@@ -208,7 +209,6 @@
     width: 230px;
   }
   .specification {
-    width: 690px;
     margin-top: 240px;
   }
   .specification__slogan {
@@ -221,7 +221,8 @@
     justify-content: space-around;
   }
   .specification__list-item {
-    width: 292px;
+    width: 290px;
+    height: 267px;
   }
 }
 // .specification__list-icon-study {
