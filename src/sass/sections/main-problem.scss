@@ -1,8 +1,7 @@
-@media (max-width: 767px) {
-  .main-problem__header {
-    height: 516px;
-    background-color: $background-color;
-    position: relative;
+@media (min-width: 320px) {
+  .container {
+    width: 280px;
+    margin: 0 auto;
   }
   .description {
     position: absolute;
@@ -10,7 +9,12 @@
     right: 20px;
     width: 280px;
     margin: 0 auto;
-    z-index: 1;
+  }
+  .main-problem__header {
+    height: 516px;
+    background-color: $background-color;
+    position: relative;
+    z-index: -1;
   }
   .description__slogan {
     font-family: $main-font;
@@ -24,37 +28,50 @@
     color: $second-color;
   }
   .description__list {
-    padding-left: 30px;
-    padding-top: 51px;
+    padding-top: 22px;
     padding-bottom: 34px;
+    padding-left: 28px;
     box-shadow: 3px 5px 13px 0px rgba(0, 0, 0, 0.13);
     background-color: $primary-text-color;
     list-style: none;
 
-    &-item {
+    &-txt {
       font-family: $main-font;
       font-weight: $main-font-weight;
+      line-height: 20px;
+      letter-spacing: 1px;
       font-size: 13px;
       color: $first-color;
+    }
+    &-tabs {
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 29px;
+      color: $second-color;
+      font-family: $main-font;
+      font-weight: 500;
+      margin-left: 35px;
+      margin-bottom: 5px;
       position: relative;
-      width: 226px;
+
+      &::before {
+        display: block;
+        content: '';
+        width: 25px;
+        height: 2px;
+        background-color: $second-color;
+        position: absolute;
+        top: 13px;
+        left: -34px;
+      }
     }
   }
   .description__list-item:not(:last-child) {
-    margin-bottom: 51px;
+    margin-bottom: 16px;
   }
-  .description__list-item::before {
-    display: block;
-    content: '';
-    width: 25px;
-    height: 2px;
-    background-color: $second-color;
-    position: absolute;
-    top: -21px;
-  }
+
   .specification {
-    margin-top: 52px;
-    margin-top: 210px;
+    margin-top: 260px;
   }
 
   .specification__slogan {
@@ -63,6 +80,7 @@
     font-size: 20px;
     text-align: center;
     padding-bottom: 40px;
+    letter-spacing: 1px;
   }
   .specification__list {
     display: flex;
@@ -77,6 +95,7 @@
       text-align: center;
       letter-spacing: 1px;
       color: $first-color;
+      margin: 0 26px 0 26px;
     }
 
     &-text {
@@ -89,6 +108,7 @@
       padding-top: 45px;
       letter-spacing: 1px;
       position: relative;
+      margin: 0 26px 0 26px;
 
       &::after {
         display: block;
@@ -97,7 +117,7 @@
         height: 2px;
         background-color: $second-color;
         position: absolute;
-        left: 126px;
+        left: 100px;
         top: 22px;
       }
     }
@@ -154,6 +174,54 @@
   }
   .specification__list-item:hover .specification__list-text::after {
     background-color: white;
+  }
+}
+@media (min-width: 768px) {
+  .description {
+    width: 690px;
+    margin: 0 auto;
+  }
+  .main-problem__header {
+    height: 333px;
+    background-image: url(../images/tablet/fire.png);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  .description__slogan {
+    width: 450px;
+    font-size: 26px;
+    line-height: 33px;
+    padding-top: 40px;
+  }
+  .description__list {
+    padding-top: 37px;
+    padding-bottom: 44px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .container {
+    width: 690px;
+    margin: 0 auto;
+  }
+  .description__list-item {
+    width: 230px;
+  }
+  .specification {
+    width: 690px;
+    margin-top: 240px;
+  }
+  .specification__slogan {
+    font-size: 26px;
+    line-height: 33px;
+  }
+  .specification__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .specification__list-item {
+    width: 292px;
   }
 }
 // .specification__list-icon-study {
