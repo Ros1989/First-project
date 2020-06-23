@@ -8,6 +8,9 @@
 
   @media (min-width: 768px) {
     padding: 52px 0 76px;
+    & .student {
+      display: flex;
+    }
   }
 
   @media (min-width: 1280px) {
@@ -53,23 +56,6 @@
   padding: 24px 28px 34px;
   background-color: $primary-text-color;
 
-  // display: flex !important; імпортант це НЕ ПРАВИЛЬНО!!!
-
-  @media (min-width: 768px) {
-    width: 688px;
-    padding: 42px 44px 48px 36px;
-  }
-
-  @media (min-width: 1280px) {
-    width: 1065px;
-    margin: 0 auto;
-    padding: 46px 100px 46px 84px;
-  }
-
-  @media (min-width: 1680px) {
-    padding: 50px 98px 44px 84px;
-  }
-
   &__container--photo {
     margin: 0;
 
@@ -84,7 +70,6 @@
   }
 
   &__photo-wrapper {
-    // width: 80px;
     margin: 0 auto;
     border-radius: 50%;
 
@@ -219,101 +204,30 @@
     }
   }
 
+  &__photo-wrapper {
+    width: 160px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 1065px;
+    margin: 0 auto 32px;
+    padding: 46px 100px 46px 84px;
+  }
+
+  @media (min-width: 1680px) {
+    padding: 50px 98px 44px 84px;
+  }
+
   @media (max-width: 767px) {
     margin-bottom: 17px;
   }
 
   @media (min-width: 768px) {
-    display: flex;
-    // width: 680px;
     margin: 0 auto 22px;
-  }
-
-  &__photo-wrapper {
-    width: 160px;
+    width: 690px;
+    padding: 42px 44px 48px 36px;
   }
 }
-
-// OVERLAY!!!
-
-// .overlay {
-//   display: flex;
-//   justify-content: center;
-//   flex-basis: 280px;
-//   position: relative;
-
-//   &__photo-wrapper {
-//     width: 54px;
-
-//     @media (min-width: 768px) {
-//       &:not(:last-of-type) {
-//         margin-right: 22px;
-//       }
-//     }
-
-//     @media (min-width: 1280px) {
-//       &:not(:last-of-type) {
-//         margin-right: 38px;
-//       }
-//     }
-//   }
-
-//   @media (max-width: 767px) {
-//     &__photo-wrapper {
-//       width: 54px;
-
-//       &:not(:last-of-type) {
-//         margin-right: 10px;
-//       }
-//     }
-
-//     &__fourth-student,
-//     &__fifth-student,
-//     &__sixth-student,
-//     &__seventh-student {
-//       display: none;
-//     }
-//   }
-// }
-
-// .arrows {
-//   display: flex;
-//   justify-content: space-between;
-//   width: 100%;
-//   position: absolute;
-//   bottom: 28px;
-//   left: 0;
-//   z-index: 10;
-//   transform: translateY(8px);
-
-//   @media (min-width: 768px) {
-//     bottom: 50%;
-//     left: 50%;
-//     transform: translate(-50%, 50%);
-//     width: 726px;
-//   }
-
-//   @media (min-width: 1280px) {
-//     width: 1175px;
-//   }
-
-//   &__prev,
-//   &__next {
-//     width: 22px;
-//     height: 12px;
-//     fill: $second-color;
-//     cursor: pointer;
-
-//     @media (min-width: 768px) {
-//       width: 36px;
-//       height: 18px;
-//     }
-//   }
-// }
-
-// .arrows-position {
-//   position: relative;
-// }
 
 // SLICK  !!!
 
@@ -325,12 +239,13 @@
 }
 
 .slick-dots li button {
-  border: none;
+  border: 1px solid transparent;
   outline: none;
   border-radius: 50%;
   font-size: 0;
   width: 54px;
   height: 54px;
+  background-clip: padding-box;
 
   &:hover,
   &:focus {
@@ -345,7 +260,7 @@
 .slick-dots li {
   &:not(:last-of-type) {
     margin-right: 10px;
-  }
+  
 
   @media (min-width: 768px) {
     margin-right: 22px;
@@ -354,6 +269,7 @@
   @media (min-width: 1280px) {
     margin-right: 38px;
   }
+}
 }
 
 #slick-slide-control00 {
