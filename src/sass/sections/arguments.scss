@@ -7,7 +7,7 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  bottom: -93%;
+  top: 1495px;
 }
 
 .arguments__title {
@@ -85,7 +85,7 @@
 @media (min-width: 768px) {
     .arguments {
     width: 690px;
-    bottom: -46%;
+    top: 1220px;
   }
 
 
@@ -125,7 +125,7 @@
 @media (min-width: 1280px) {
     .arguments {
     width: 1210px;
-    bottom: -13.3%;
+    top: 820px;
   }
 
 
@@ -171,7 +171,7 @@
 @media (min-width: 1680px) {
     .arguments {
     width: 1640px;
-    bottom: -44%;
+    top: 1010px;
   }
 
 
@@ -184,7 +184,7 @@
 
   .arguments__list {
     width: 1340px;
-    padding: 62px 0 120px 0;
+    padding: 40px 0 80px 0;
   }
 
   .arguments__element {
