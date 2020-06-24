@@ -15,6 +15,7 @@
     background-color: $background-color;
     position: relative;
     z-index: -1;
+    width: 100%;
   }
   .description__slogan {
     font-family: $main-font;
@@ -213,6 +214,7 @@
   }
   .specification__slogan {
     font-size: 26px;
+    letter-spacing: 1px;
     line-height: 33px;
   }
   .specification__list {
@@ -224,25 +226,176 @@
     width: 290px;
     height: 267px;
   }
+  .overlay-main-problem {
+    width: 290px;
+  }
 }
-// .specification__list-icon-study {
-//   width: 42px;
-//   height: 45px;
-// }
-// .specification__list-icon-mobile,
-// .specification__list-icon-open-communication {
-//   width: 44px;
-//   height: 45px;
-// }
-// .specification__list-icon-open-book {
-//   width: 50px;
-//   height: 36px;
-// }
-// .specification__list-icon-student {
-//   width: 39px;
-//   height: 45px;
-// }
-// .specification__list-icon-audio {
-//   width: 50px;
-//   height: 43px;
-// }
+@media (min-width: 1280px) {
+  .container {
+    width: 1210px;
+    margin: 0 auto;
+  }
+  .description {
+    width: 1210px;
+    margin-right: 15px;
+  }
+  .main-problem__header {
+    height: 525px;
+    background-image: url(../images/desktop1280/fire.png);
+    background-position: right 1px bottom -66px;
+  }
+  .description__slogan {
+    font-size: 42px;
+    letter-spacing: 2px;
+    line-height: 57px;
+    width: 740px;
+    padding-top: 84px;
+    padding-bottom: 60px;
+  }
+  .slogan-inner {
+    display: block;
+  }
+  .description__list-item {
+    width: 283px;
+  }
+  .description__list {
+    padding: 54px 100px 51px 100px;
+
+    &-txt {
+      font-size: 18px;
+      line-height: 29px;
+    }
+    &-tabs {
+      font-size: 21px;
+      letter-spacing: 1px;
+      line-height: 29px;
+    }
+  }
+  .specification__list-icon-svg {
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -100%);
+  }
+  .description__list-item:nth-last-child(n + 3) {
+    margin-bottom: 50px;
+  }
+  .container {
+    width: 1210px;
+    margin: 0 auto;
+  }
+  .specification {
+    margin-top: 220px;
+    margin-bottom: 100px;
+  }
+  .specification__list-item {
+    width: 390px;
+    height: 358px;
+    padding-top: 118px;
+    padding-bottom: 36px;
+  }
+  .specification__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1210px;
+    margin: 0 auto;
+
+    &-subtitle {
+      font-size: 18px;
+    }
+
+    &-text {
+      font-size: 15px;
+      letter-spacing: 1px;
+      line-height: 31px;
+      width: 350px;
+
+      &::after {
+        left: 155px;
+      }
+    }
+  }
+  .specification__list-icon-svg {
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -100%);
+  }
+  .specification__slogan {
+    font-size: 42px;
+    line-height: 63px;
+    text-align: left;
+  }
+
+  .overlay-main-problem {
+    width: 390px;
+    height: 100%;
+  }
+}
+@media (min-width: 1680px) {
+  .container {
+    width: 1640px;
+    margin: 0 auto;
+  }
+  .description {
+    width: 1340px;
+    margin-right: 155px;
+  }
+  .main-problem__header {
+    height: 560px;
+    background-image: url(../images/desktop1280/fire.png);
+    background-position: right 1px bottom -66px;
+  }
+  .description__slogan {
+    width: 830px;
+    font-size: 46px;
+    line-height: 63px;
+    padding-top: 90px;
+    padding-bottom: 80px;
+  }
+  .description__list-item {
+    width: 306px;
+    font-size: 21px;
+    line-height: 29px;
+  }
+  .description__list {
+    padding: 93px 71px 90px 80px;
+  }
+  .container {
+    width: 1340px;
+    margin: 0 auto;
+  }
+  .specification {
+    margin-top: 313px;
+    margin-bottom: 130px;
+  }
+  .specification__list {
+    width: 1340px;
+    padding: 0px 9px 0 9px;
+
+    &-subtitle {
+      font-size: 21px;
+      line-height: 29px;
+      width: 325px;
+    }
+    &-text {
+      font-size: 19px;
+      line-height: 31px;
+
+      &::after {
+        left: 175px;
+      }
+    }
+  }
+  .specification__list-item {
+    width: 430px;
+    height: 395px;
+    padding-top: 108px;
+    padding-bottom: 43px;
+  }
+  .specification__list-icon-svg {
+    top: 25%;
+  }
+  .overlay-main-problem {
+    width: 430px;
+  }
+}
