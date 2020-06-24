@@ -9,7 +9,9 @@
 @import './helpers/mixins.scss';
 @import 'base.scss';
 
-@import './components/container.scss';
+@import "./components/container.scss";
+@import './components/button.scss';
+@import './components/slick.scss';
 
 @import './sections/header.scss';
 @import './sections/main-problem.scss';
