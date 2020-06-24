@@ -8,6 +8,7 @@
 
   @media (min-width: 768px) {
     padding: 52px 0 76px;
+
     & .student {
       display: flex;
     }
@@ -55,6 +56,7 @@
   min-width: 280px;
   padding: 24px 28px 34px;
   background-color: $primary-text-color;
+  box-shadow: 1px 1px 3px 2px rgb(246, 246, 246);
 
   &__container--photo {
     margin: 0;
@@ -191,7 +193,6 @@
     }
 
     @media (min-width: 768px) {
-
       &--name,
       &--about,
       &--comment {
@@ -260,16 +261,15 @@
 .slick-dots li {
   &:not(:last-of-type) {
     margin-right: 10px;
-  
 
-  @media (min-width: 768px) {
-    margin-right: 22px;
-  }
+    @media (min-width: 768px) {
+      margin-right: 22px;
+    }
 
-  @media (min-width: 1280px) {
-    margin-right: 38px;
+    @media (min-width: 1280px) {
+      margin-right: 38px;
+    }
   }
-}
 }
 
 #slick-slide-control00 {
