@@ -193,7 +193,6 @@
     }
 
     @media (min-width: 768px) {
-
       &--name,
       &--about,
       &--comment {
@@ -273,37 +272,68 @@
   }
 }
 
-.slick-dots li.slick-active>button {
+.slick-dots li.slick-active > button {
   border: 2px solid $second-color;
-  border-radius: 50%;
+}
+
+#slick-slide-control00,
+#slick-slide-control01,
+#slick-slide-control02,
+#slick-slide-control03,
+#slick-slide-control04,
+#slick-slide-control05,
+#slick-slide-control06 {
+  background-position: center;
+  background-size: contain;
 }
 
 #slick-slide-control00 {
   background-image: url('../images/desktop1280/photo4.png');
+  @media (min-resolution: 192dpi) {
+    background-image: url('../images/desktop1280/photo4@2x.png');
+  }
 }
 
 #slick-slide-control01 {
   background-image: url('../images/desktop1280/photo5.png');
+  @media (min-resolution: 192dpi) {
+    background-image: url('../images/desktop1280/photo5@2x.png');
+  }
 }
 
 #slick-slide-control02 {
   background-image: url('../images/desktop1280/photo6.png');
+  @media (min-resolution: 192dpi) {
+    background-image: url('../images/desktop1280/photo6@2x.png');
+  }
 }
 
 #slick-slide-control03 {
   background-image: url('../images/desktop1280/photo7.png');
+  @media (min-resolution: 192dpi) {
+    background-image: url('../images/desktop1280/photo7@2x.png');
+  }
 }
 
 #slick-slide-control04 {
   background-image: url('../images/desktop1280/photo8.png');
+  @media (min-resolution: 192dpi) {
+    background-image: url('../images/desktop1280/photo8@2x.png');
+  }
 }
 
 #slick-slide-control05 {
   background-image: url('../images/desktop1280/photo9.png');
+  @media (min-resolution: 192dpi) {
+    background-image: url('../images/desktop1280/photo9@2x.png');
+  }
 }
 
 #slick-slide-control06 {
   background-image: url('../images/desktop1280/photo10.png');
+  @media (min-resolution: 192dpi) {
+    background-image: url('../images/desktop1280/photo10@2x.png');
+  }
 }
 
 .slick-prev,
@@ -313,7 +343,6 @@
   background-color: transparent;
   width: 32px;
   height: 32px;
-  // fill: $second-color;
   cursor: pointer;
   font-size: 0px;
   cursor: pointer;
@@ -351,12 +380,12 @@
 
 @media (max-width: 767px) {
   .slick-dots li {
-    display: none
+    display: none;
   }
 
   .slick-dots li.slick-active,
-  .slick-dots li.slick-active+li,
-  .slick-dots li.slick-active+li+li {
+  .slick-dots li.slick-active + li,
+  .slick-dots li.slick-active + li + li {
     display: block;
   }
 
@@ -366,18 +395,18 @@
     display: block;
   }
 
-  .slick-dots li.slick-active~li:nth-last-child(1),
-  .slick-dots li.slick-active~li:nth-last-child(2),
-  .slick-dots li.slick-active~li:nth-last-child(3) {
+  .slick-dots li.slick-active ~ li:nth-last-child(1),
+  .slick-dots li.slick-active ~ li:nth-last-child(2),
+  .slick-dots li.slick-active ~ li:nth-last-child(3) {
     display: none;
   }
 
-  .slick-dots li.slick-active+li+li:nth-last-child(3),
-  .slick-dots li.slick-active+li+li:nth-last-child(2),
-  .slick-dots li.slick-active+li+li:nth-last-child(1),
-  .slick-dots li.slick-active+li:nth-last-child(3),
-  .slick-dots li.slick-active+li:nth-last-child(2),
-  .slick-dots li.slick-active+li:nth-last-child(1) {
+  .slick-dots li.slick-active + li + li:nth-last-child(3),
+  .slick-dots li.slick-active + li + li:nth-last-child(2),
+  .slick-dots li.slick-active + li + li:nth-last-child(1),
+  .slick-dots li.slick-active + li:nth-last-child(3),
+  .slick-dots li.slick-active + li:nth-last-child(2),
+  .slick-dots li.slick-active + li:nth-last-child(1) {
     display: block;
   }
 }
