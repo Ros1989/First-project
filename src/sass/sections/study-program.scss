@@ -323,11 +323,6 @@
     background-color: $fifth-text-color-opacity;
     position: absolute;
     top: 160px;
-  } 
-
-  .container {
-    width: 1280px;
-    padding-left: 50px;
   }
   
   .program__title {
@@ -355,7 +350,7 @@
   }
   
   .program__period-element {
-    width: 205px;
+    width: 180px;
     position: relative;
     padding-left: 0;
     padding-bottom: 0;
@@ -382,6 +377,10 @@
   
   .program__period-moduls-element {
     width: 205px;
+  }
+
+  .program__period-moduls-element:not(:last-of-type) {
+    margin-bottom: 31px;
   }
   
   .program__period-moduls-name {
@@ -423,11 +422,6 @@
     content: '';
     height: 6px;
     top: 258px;
-  } 
-
-  .container {
-    width: 1640px;
-    padding-left: 182px;
   }
   
   .program__title {
