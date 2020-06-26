@@ -26,6 +26,9 @@
     color: $primary-text-color;
     padding-top: 56px;
     padding-bottom: 22px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    width: 230px;
   }
 
   .slogan-wrap {
@@ -212,6 +215,10 @@
     background-image: url(../images/tablet/fire.png);
     background-repeat: no-repeat;
     background-position: right;
+  }
+  .main-problem__header:hover {
+    background-color: $second-color;
+    transition-duration: 0.2s;
   }
   .description__slogan {
     width: 450px;
