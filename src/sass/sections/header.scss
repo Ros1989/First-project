@@ -12,13 +12,14 @@
 
 .navigation-wrapper {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
+    margin-right: 44px;
 }
   
 .logo-link {
@@ -311,6 +312,7 @@
         font-size: 13px;
         font-weight: bold;
         width: 130px;
+        line-height: 20px;
     }
 
     &--indent {
@@ -385,5 +387,9 @@
 
 // DESKTOP 1280
 @media (min-width: 1280px) {
+    .header {
+        background-image: url(../../images/photos/bg_header_line_1280.jpg);
+    }
+
     
 }
