@@ -1,5 +1,6 @@
 .header {
     height: 687px;
+    background-image: url(../../images/photos/bg_header_line.png);
 }
 
 .navigation {
@@ -155,9 +156,23 @@
     justify-content: center;
 }
 
+.section-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .section-title {
+    font-size: 20px;
+    line-height: 29px;
+    color: $first-color;
+     
     &--br {
     display: block;
+
+        &-notmobile {
+            display: inline-block;
+        }
     }
 
     &--indent {
@@ -170,6 +185,7 @@
     font-family: $main-font;
     font-size: 15px;
     font-weight: bold;
+    line-height: 20px;
 
     &__not_easy {
        color: $third-color;
@@ -186,6 +202,11 @@
 
 .lesson--indent {
     margin: 36px 0;
+}
+
+.team-image {
+    display: flex;
+    justify-content: center;
 }
 
 .our-priority {
