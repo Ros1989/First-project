@@ -96,8 +96,8 @@
         height: 28px;
 
         @media (min-width: 768px) {
-            width: 25px;
-            height: 35px;
+            width: 28px;
+            height: 45px;
         }
     }
 
@@ -326,6 +326,7 @@
 // TABLET
 @media (min-width: 768px) {
     .header {
+        height: 688px;
         background-image: url(../../images/photos/bg_header_line_tablet.jpg);
     }
 
