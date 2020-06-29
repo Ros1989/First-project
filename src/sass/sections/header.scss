@@ -411,10 +411,10 @@
         line-height: 26px;
     }
 
-    .our-priority {
-        display: flex;
-        justify-content: space-between;
-    }
+    // .our-priority {
+    //     display: flex;
+    //     justify-content: space-between;
+    // }
 
     .our-priority__item {
         width: 380px;
@@ -455,3 +455,28 @@
         height: 48px;
     }
 }
+
+@media (min-width: 1680px) {
+    .header {
+        background-image: url(../../images/photos/bg_header_line_1680.jpg);
+        height: 1200px;
+    }
+    
+    .section-title {
+        font-size: 58px;
+        line-height: 75px;
+    }
+    
+    .header-wrapper {
+        font-size: 21px;
+        line-height: 33px;
+    }
+
+    .our-priority__description {
+        font-size: 21px;
+        line-height: 33px;
+    }
+
+}
+
+  
