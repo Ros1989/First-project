@@ -11,107 +11,94 @@
     z-index: 1;
 }
 
-.navigation-wrapper {
-    display: flex;
-    // justify-content: space-between;
-    align-items: center;
-}
-
 .navigation {
     display: flex;
     justify-content: space-between;
     margin-right: 44px;
+
+    &-wrapper {
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+    }
 }
   
 .logo-link {
     text-decoration: none;
-  
-    // @media (min-width: 768px) {
-    //   margin-right: 12%;
-    //   order: -1;
-    // }
-    // @media (min-width: 1280px) {
-    //   margin-right: 22%;
-    // }
-    // @media (min-width: 1680px) {
-    //   margin-right: 24%;
-    // }
-}
-  
-.logo-link__wrap {
-    align-self: flex-start;
+
+    &__wrap {
+        align-self: flex-start;
+    }
+
+    &__description {
+        display: flex;
+        justify-content: space-between;
+        font-size: 5.3px;
+        font-family: $main-font;
+        color: rgb(0, 0, 0);
+        font-weight: $main-font-weight;
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.7px;
+    
+        @media (min-width: 768px) {
+        font-size: 8.75px;
+        }
+    
+        &--accent {
+        color: $second-color;
+        }
+    }
 }
   
 .fire-wrap {
     display: flex;
     justify-content: center;
-}
 
-.fire-wrap__text {
-    font-size: 15px;
-    font-family: $main-font;
-    color: rgb(0, 0, 0);
-    font-weight: $main-font-weight;
-    line-height: 1.333;
-    letter-spacing: 1px;
-  
-    @media (min-width: 768px) {
-      font-size: 25px;
-    }
-    @media (min-width: 1280px) {
-      font-size: 25px;
-    }
-}
-  
-.logo-link__description {
-    display: flex;
-    justify-content: space-between;
-    font-size: 5.3px;
-    font-family: $main-font;
-    color: rgb(0, 0, 0);
-    font-weight: $main-font-weight;
-    text-transform: uppercase;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.7px;
-  
-    @media (min-width: 768px) {
-      font-size: 8.75px;
-    }
-  
-    &--accent {
-      color: $second-color;
-    }
-}
-  
-.fire-wrap__fire {
-    // position: relative;
-    left: -3px;
-    width: 15px;
-    height: 20px;
-    fill: $second-color;
-
-    &--svg {
-        width: 20px;
-        height: 28px;
-
+    &__text {
+        font-size: 15px;
+        font-family: $main-font;
+        color: rgb(0, 0, 0);
+        font-weight: $main-font-weight;
+        line-height: 1.333;
+        letter-spacing: 1px;
+    
         @media (min-width: 768px) {
-            width: 28px;
-            height: 45px;
+        font-size: 25px;
+        }
+        @media (min-width: 1280px) {
+        font-size: 25px;
         }
     }
 
+    &__fire {
+        // position: relative;
+        left: -3px;
+        width: 15px;
+        height: 20px;
+        fill: $second-color;
 
-    @media (min-width: 768px) {
-      width: 21px;
-      height: 30px;
+        &--svg {
+            width: 20px;
+            height: 28px;
 
+            @media (min-width: 768px) {
+                width: 28px;
+                height: 45px;
+            }
+        }
+
+
+        @media (min-width: 768px) {
+        width: 21px;
+        height: 30px;
+
+        }
+        
     }
-    
 }
   
-
-
 // BURGER-MENU
 .navigation-btn-burger {
     width: 24px;
@@ -138,6 +125,11 @@
     display: flex;
     justify-content: space-between;
     flex-basis: 612x;
+
+    @media (max-width: 1279px) {
+        display: none;
+    }
+
   
     &__item:not(:last-of-type) {
       margin-right: 45px;
@@ -165,11 +157,6 @@
     }
 }
 
-@media (max-width: 1279px) {
-    .navigation-menu {
-        display: none;
-    }
-}
 
 // ABOUT
 .container--header {
@@ -352,18 +339,21 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
-    }
-
-    .section-title--indent {
-        padding-top: 15px;
-    }
-
-    .section-about {
         padding-top: 60px;
     }
 
-    .section-title--br-notmobile {
-        display: block;
+    .section-title {
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 1.269;
+
+        &--indent {
+            padding-top: 15px;
+        }
+
+        &--br-notmobile {
+            display: block;
+        }
     }
 
     .our-priority {
@@ -381,12 +371,6 @@
 
     .section-text {
         justify-content: flex-start;
-    }
-
-    .section-title {
-        font-size: 26px;
-        font-weight: bold;
-        line-height: 1.269;
     }
 
     .team-image {
@@ -411,51 +395,50 @@
         line-height: 26px;
     }
 
-    // .our-priority {
-    //     display: flex;
-    //     justify-content: space-between;
-    // }
+    .our-priority {
 
-    .our-priority__item {
-        width: 380px;
-    }
-
-    .our-priority__description {
-        font-size: 18px;
-        line-height: 28px;
-        width: 280px;
-        margin-left: -40px;
-        z-index: 15;
-    }
-
-    .our-priority__item-wrapper {
-        width: 100px;
-        height: 100px;
-        z-index: 10;
-
-        &::before {
-            height: 63px;
-            margin-top: 16px; 
-            z-index: 11;       
+        &__item {
+            width: 380px;
         }
-    }
 
-    .our-priority__item-wrapper--svg_female_student {
-        width: 39px;
-        height: 45px;
-    }
+        &__description {
+            font-size: 18px;
+            line-height: 28px;
+            width: 280px;
+            margin-left: -40px;
+            z-index: 15;
+        }
 
-    .our-priority__item-wrapper--svg_mobile_learning {
-        width: 44px;
-        height: 45px;
-    }
+        &__item-wrapper {
+            width: 100px;
+            height: 100px;
+            z-index: 10;
 
-    .our-priority__item-wrapper--svg_insurance {
-        width: 40px;
-        height: 48px;
+            &::before {
+                height: 63px;
+                margin-top: 16px; 
+                z-index: 11;       
+            }
+
+            &--svg_female_student {
+                width: 39px;
+                height: 45px;
+            }
+
+            &--svg_mobile_learning {
+                width: 44px;
+                height: 45px;
+            }
+
+            &--svg_insurance {
+                width: 40px;
+                height: 48px;
+            }
+        }
     }
 }
 
+// DESKTOP 1680
 @media (min-width: 1680px) {
     .header {
         background-image: url(../../images/photos/bg_header_line_1680.jpg);
