@@ -181,6 +181,7 @@
     line-height: 29px;
     color: $first-color;
     font-family: $main-font;
+    letter-spacing: 0.6px;
      
     &--br {
     display: block;
@@ -204,6 +205,7 @@
     font-size: 15px;
     font-weight: bold;
     line-height: 20px;
+    letter-spacing: 0.6px;
 
     &__not_easy {
        color: $third-color;
@@ -308,6 +310,7 @@
         font-weight: bold;
         width: 130px;
         line-height: 20px;
+        letter-spacing: 0.65px;
     }
 
     &--indent {
@@ -346,6 +349,7 @@
         font-size: 26px;
         font-weight: bold;
         line-height: 1.269;
+        letter-spacing: 0.78px;
 
         &--indent {
             padding-top: 15px;
@@ -388,11 +392,14 @@
     .section-title {
         font-size: 48px;
         line-height: 58px;
+        letter-spacing: 1.44px;
     }
     
     .header-wrapper {
         font-size: 18px;
         line-height: 26px;
+        letter-spacing: 0.9px;
+
     }
 
     .our-priority {
@@ -404,6 +411,7 @@
         &__description {
             font-size: 18px;
             line-height: 28px;
+            letter-spacing: 0.9px;
             width: 280px;
             margin-left: -40px;
             z-index: 15;
@@ -448,16 +456,19 @@
     .section-title {
         font-size: 58px;
         line-height: 75px;
+        letter-spacing: 1.67px;
     }
     
     .header-wrapper {
         font-size: 21px;
         line-height: 33px;
+        letter-spacing: 1px;
     }
 
     .our-priority__description {
         font-size: 21px;
         line-height: 33px;
+        letter-spacing: 0.9px;
     }
 
 }
