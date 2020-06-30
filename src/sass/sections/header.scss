@@ -240,16 +240,19 @@
     
 
     &__item {
-        @media (max-width: 768px) {
+        @media (max-width: 1279px) {
             width: 205px;
             justify-content: space-between;
         }
         
         display: flex;
 
-        &:not(:last-child) {
-            margin-bottom: 25px;
+        @media (max-width: 767px) {
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
         }
+        
     }
 
     &__item-icon {
@@ -360,17 +363,25 @@
         }
     }
 
+    .lesson--indent {
+        margin: 36px 0 0;
+    }
+    
+
     .our-priority {
         display: flex;
         justify-content: space-between;
 
         &__item {
-            margin-bottom: 25px;
+            margin-bottom: 0;
+            align-items: center;
         }
 
         &__item-wrapper {
             margin-right: 18px;
         }
+
+        
     }
 
     .section-text {
