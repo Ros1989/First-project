@@ -4,6 +4,10 @@
     margin: 0 auto;
   }
 
+  .main-problem {
+    position: relative;
+  }
+
   .description {
     position: absolute;
     top: 0;
@@ -79,15 +83,15 @@
     margin-bottom: 16px;
   }
 
-  .description__list-item::before {
-    display: block;
-    content: '';
-    width: 25px;
-    height: 2px;
-    background-color: $second-color;
-    position: absolute;
-    top: -21px;
-  }
+  // .description__list-item::before {
+  //   display: block;
+  //   content: '';
+  //   width: 25px;
+  //   height: 2px;
+  //   background-color: $second-color;
+  //   position: absolute;
+  //   top: -21px;
+  // }
 
   .specification {
     margin-top: 260px;
