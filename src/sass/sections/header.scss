@@ -157,6 +157,36 @@
     }
 }
 
+// MENU BURGER
+.menu-burger {
+    background-color: $background-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.menu-burger__list-item-link {
+    text-decoration: none;
+}
+
+
+
+
+.close-btn {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+}
+
+.menu-burger {
+    height: 100wh;
+    display: flex;
+    align-items: center;
+}
+
 
 // ABOUT
 .container--header {
